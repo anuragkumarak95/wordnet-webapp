@@ -1,2 +1,27 @@
 # wordnet-webapp
-Web Application of WordNet with Flask Framework.
+
+Web Application of [WordNet](https://github.com/anuragkumarak95/wordnet) with Flask Framework.
+
+## What is Flask
+
+`Flask` is a micro web framework written in `Python` and based on the Werkzeug toolkit and Jinja2 template engine. It is BSD licensed. Applications that use the Flask framework include Pinterest, LinkedIn, and the community web page for Flask itself.
+
+[here](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world) you can easily learn how to create an webapp using Flask Framework. (best that I have read)
+
+![Made with python3.5](http://forthebadge.com/images/badges/made-with-python.svg)
+
+## Way to go
+
+1. `Clone this repository` and go to root directory (~wordnet-webapp) and `run` this script
+
+        $pip install -r requirements.txt
+
+1. Then `run` this script
+
+        $python run.py
+
+1. Then browse at  the address that is provided at your `console`.
+
+![BUILT WITH LOVE](http://forthebadge.com/images/badges/built-with-love.svg)
+
+by [@Anurag](https://github.com/anuragkumarak95)

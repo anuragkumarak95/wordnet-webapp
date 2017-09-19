@@ -2,4 +2,4 @@ from app import app
 
 @app.route('/')
 def home():
-    return {'Home':'home alone'}
+    return 'Hello There.'
