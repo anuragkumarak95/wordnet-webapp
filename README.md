@@ -22,6 +22,21 @@ Web Application of [WordNet](https://github.com/anuragkumarak95/wordnet) with Fl
 
 1. Then browse at  the address that is provided at your `console`.
 
+## Apis to use
+
+        /api/net/<word>
+
+fill `root` with a word that is present in `network_sample` file, and this link will produce a json list of words at ***1 - depth*** from this word as root in the network.
+
+### output format
+
+```js
+{
+'words':['word1','word2','word3','word4',...]
+}
+
+```
+
 ![BUILT WITH LOVE](http://forthebadge.com/images/badges/built-with-love.svg)
 
 by [@Anurag](https://github.com/anuragkumarak95)

@@ -1,7 +1,15 @@
+import os
 from app import app
+from wordnet import *
 from flask import jsonify, request
 import json
 from .auth import requires_auth
+
+
+word_net = retrieve_net(
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__)))+'/data/network_sample.wrnt'
+    )
+
 
 resource = {
     1:{
@@ -18,6 +26,9 @@ resource = {
 def home():
     return 'Hello There.'
 
+'''
+Example views: only experimental
+'''
 @app.route('/index/<id>')
 def homeindex(id):
     return 'index'+str(id)
@@ -30,6 +41,18 @@ def api(i):
     resp.status_code = 200
     return resp
 
+'''
+main views start here onwards.
+'''
+@app.route('/api/net/<root>')
+def get_words(root):
+    output = {
+        'words': return_net(root, word_net, depth=1)
+    }
+
+    resp = jsonify(output)
+    resp.status_code = 200
+    return resp
 
 '''
 Error Handlers
@@ -44,3 +67,4 @@ def not_found(error=None):
     resp.status_code = 404
 
     return resp
+
