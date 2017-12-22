@@ -9,5 +9,4 @@ flask-wtf
 flask-babel
 guess_language
 flipflop
-coverage
 wordnet
