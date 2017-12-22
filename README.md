@@ -22,6 +22,17 @@ Web Application of [WordNet](https://github.com/anuragkumarak95/wordnet) with Fl
 
 1. Then browse at  the address that is provided at your `console`.
 
+**OR using Dockerfile**
+
+1. `Pull` the Docker image from docker hub using below script
+
+        $docker pull anuragkumarak1995/wordnet:latest
+
+1. Then `run` the image container, application will be hosted on port 5000.
+
+        $docker container run --rm --name wrdnt -p "5000:5000" -d anuragkumarak1995/wordnet:latest
+
+1. To `test` that container is working look into docker container logs.
 ## Apis to use
 
         /api/net/<word>
